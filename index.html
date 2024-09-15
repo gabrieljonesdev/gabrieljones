@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Includi Header</title>
-  <link rel="stylesheet" href="assents/css/style.css">
+  <title>Header con iFrame</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Div che conterrà l'header esterno -->
-  <div id="header-container"></div>
 
-  <!-- Contenuto principale -->
+  <!-- Iframe per caricare l'header esterno -->
+  <iframe id="header-iframe" src="https://gabrieljonesdev.github.io/gabrieljones/assents/archived/header6.html" frameborder="0"></iframe>
+
+  <!-- Contenuto del sito -->
   <div class="main-content">
-    <h1>Benvenuto nel sito web!</h1>
-    <p>Questo è un esempio di sito con un header esterno incluso dinamicamente.</p>
+    <h1>Benvenuto nel sito!</h1>
+    <p>Questo esempio utilizza un iframe per caricare l'header.</p>
   </div>
 
-  <script src="assents/js/script.js"></script>
 </body>
 </html>
