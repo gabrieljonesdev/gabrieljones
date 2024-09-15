@@ -1,8 +1,23 @@
+/* Rimuove i margini e i padding del body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
 /* Stile per l'iframe */
 #iframe {
   width: 100%;
-  height: 150px; /* Altezza dell'iframe: puoi regolarla in base alla dimensione dell'header */
+  height: auto;
   border: none;
+}
+
+/* Rende l'iframe responsive */
+#iframe {
+  width: 100vw; /* Si estende alla larghezza totale della finestra */
+  height: 100vh; /* Si estende all'altezza totale della finestra */
+  border: none;  /* Rimuove i bordi dell'iframe */
+  display: block;
 }
 
 /* Stile per il contenuto principale */
