@@ -7,15 +7,8 @@ body {
 
 /* Stile per l'iframe */
 #iframe {
-  width: 100%;
-  height: auto;
-  border: none;
-}
-
-/* Rende l'iframe responsive */
-#iframe {
-  width: 100vw; /* Si estende alla larghezza totale della finestra */
-  height: 100vh; /* Si estende all'altezza totale della finestra */
+  width: 100%; /* Si estende alla larghezza totale della finestra */
+  height: 150px; /* Altezza dell'iframe: puoi regolare questo valore come desideri */
   border: none;  /* Rimuove i bordi dell'iframe */
   display: block;
 }
