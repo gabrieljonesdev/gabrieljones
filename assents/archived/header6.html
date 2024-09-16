@@ -155,7 +155,21 @@
 
 
 <script src="https://gjd.altervista.org/wp-content/themes/italiawp/inc/scripts.js"></script>
-   
+<script>
+    // open-links-in-new-tab.js
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Seleziona tutti i link nella pagina
+    var links = document.querySelectorAll('a');
+
+    // Aggiungi l'attributo target="_blank" a ciascun link
+    links.forEach(function(link) {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer'); // Aggiunge sicurezza
+    });
+});
+
+</script>
 <link rel="stylesheet" href="https://gjd.altervista.org/wp-content/themes/italiawp/inc/carousel/owl.carousel.min.css">
 <link rel="stylesheet" href="https://gjd.altervista.org/wp-content/themes/italiawp/inc/carousel/owl.theme.default.min.css">
 
