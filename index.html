@@ -1,235 +1,126 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+  <meta charset="UTF-8">
   <meta name="description" content="Chi è Gabriel">
   <meta name="keywords" content="HTML, CSS, JavaScript, PHP, Tech, psicologia, comune di Fontanafredda, gabrieljonesdev">
   <meta name="author" content="Gabriel Jones">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <title>Chi sono - Gabriel Jones</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" rel="stylesheet" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
   <link href="styles.css" rel="stylesheet">
   <link href="info.html" rel="site-information">
   <link rel="stylesheet" href="<path-a-bootstrap-italia>/dist/css/bootstrap-italia.min.css" />
   
-  <!-- Avviso agli sviluppatori! -->
-  <!-- Questo è un sito prodotto direttamente da Gabriel Jones. Per ogni dubbio potete scrivermi all'email. Tutti gli assets sono disponibili su Drive. A ottobre uscirà il primo "gabby pack" iniziato con l'evento "GATA". Sarà disponibile direttamente dal sito di "GATA 2024" a partire dal primo ottobre! -->
+  <!-- Nota per gli sviluppatori -->
+  <!-- Questo sito è realizzato da Gabriel Jones. Per qualsiasi domanda, contattami via email. Gli assets sono disponibili su Drive. A ottobre sarà disponibile il primo "gabby pack", iniziato con l'evento "GATA", sul sito "GATA 2024" a partire dal primo ottobre! -->
   
   <!-- ID sito e informazioni -->
-  <!-- 1) ID sito : 100 -->
-  <!-- 2) Domain site : gabrieljones.gjdev.it -->
-  <!-- 3) ID accessibility : 98 -->
+  <!-- ID sito: 100 -->
+  <!-- Dominio sito: gabrieljones.gjdev.it -->
+  <!-- ID accessibilità: 98 -->
 </head>
 <body>
-    <iframe src="https://gabrieljonesdev.github.io/gabrieljones/assents/archived/header6.html" width="100%" height="230" frameborder="0" scrolling="no"></iframe>
-    
-    <div class="it-header-navbar-wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <!--start nav-->
-            <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale">
-              <button class="custom-navbar-toggler" type="button" aria-controls="nav0" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#nav0">
-                <svg class="icon bg-override"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-burger"></use></svg>
+  <iframe src="https://gabrieljonesdev.github.io/gabrieljones/assents/archived/header6.html" width="100%" height="230" frameborder="0" scrolling="no" aria-label="Intestazione"></iframe>
+  
+  <div class="it-header-navbar-wrapper">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale">
+        <button class="custom-navbar-toggler" type="button" aria-controls="nav0" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="collapse" data-bs-target="#nav0">
+          <svg class="icon bg-override"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-burger"></use></svg>
+        </button>
+        <div class="collapse navbar-collapse" id="nav0">
+          <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link active" href="#" aria-current="page">Link 1 (attivo)</a></li>
+            <li class="nav-item"><a class="nav-link disabled" href="#" aria-disabled="true">Link 2 (disabilitato)</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Link 3</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Link 4</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="mainNavDropdown0">
+                Menu Dropdown
+                <svg class="icon icon-xs"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use></svg>
+              </a>
+              <div class="dropdown-menu" role="region" aria-labelledby="mainNavDropdown0">
+                <ul class="link-list">
+                  <li><a class="dropdown-item" href="#">Link lista 1</a></li>
+                  <li><a class="dropdown-item" href="#">Link lista 2</a></li>
+                  <li><a class="dropdown-item" href="#">Link lista 3</a></li>
+                  <li><span class="divider"></span></li>
+                  <li><a class="dropdown-item" href="#">Link lista 4</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item dropdown megamenu">
+              <button type="button" class="nav-link dropdown-toggle px-lg-2 px-xl-3" data-bs-toggle="dropdown" aria-expanded="false" id="megamenu-2">
+                Megamenu
+                <svg class="icon icon-xs ms-1"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use></svg>
               </button>
-              <div class="navbar-collapsable" id="nav0" style="display: none;">
-                <div class="overlay" style="display: none;"></div>
-                <div class="close-div">
-                  <button class="btn close-menu" type="button">
-                    <span class="visually-hidden">Nascondi la navigazione</span>
-                    <svg class="icon"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-close-big"></use></svg>
-                  </button>
-                </div>
-                <div class="menu-wrapper">
-                  <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link active" href="#" aria-current="page"><span>Link 1 (attivo)</span></a></li>
-                    <li class="nav-item"><a class="nav-link disabled" href="#" aria-disabled="true"><span>Link 2 (disabilitato)</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span>Link 3</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span>Link 4</span></a></li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="mainNavDropdown0">
-                        <span>Menu Dropdown</span>
-                        <svg class="icon icon-xs"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use></svg>
-                      </a>
-                      <div class="dropdown-menu" role="region" aria-labelledby="mainNavDropdown0">
-                        <div class="link-list-wrapper">
+              <div class="dropdown-menu shadow-lg" role="region" aria-labelledby="megamenu-2">
+                <div class="megamenu">
+                  <div class="row">
+                    <div class="col-xs-12 col-lg-4">
+                      <figure class="ratio ratio-21x9 lightgrey-bg-a1 mb-4 rounded">
+                        <img src="https://via.placeholder.com/560x240/ebebeb/808080/?text=Immagine" class="figure-img img-fluid rounded" alt="Segnaposto">
+                      </figure>
+                      <p>Testo utile a fornire una descrizione dei contenuti della sezione <strong>megamenu</strong>.</p>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                      <a class="it-heading-link" href="#"><svg class="icon icon-sm me-2 mb-1"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>Esplora la sezione megamenu</a>
+                      <div class="row">
+                        <div class="col-12 col-lg-6">
                           <ul class="link-list">
-                            <li><a class="dropdown-item list-item" href="#"><span>Link lista 1</span></a></li>
-                            <li><a class="dropdown-item list-item" href="#"><span>Link lista 2</span></a></li>
-                            <li><a class="dropdown-item list-item" href="#"><span>Link lista 3</span></a></li>
-                            <li><span class="divider"></span></li>
-                            <li><a class="dropdown-item list-item" href="#"><span>Link lista 4</span></a></li>
+                            <li><a class="list-item dropdown-item" href="#"><svg class="icon icon-sm me-2"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>Link lista 1</a></li>
+                            <li><a class="list-item dropdown-item" href="#"><svg class="icon icon-sm me-2"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>Link lista 2</a></li>
+                            <li><a class="list-item dropdown-item" href="#"><svg class="icon icon-sm me-2"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>Link lista 3</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                          <ul class="link-list">
+                            <li><a class="list-item dropdown-item" href="#"><svg class="icon icon-sm me-2"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>Link lista 4</a></li>
+                            <li><a class="list-item dropdown-item" href="#"><svg class="icon icon-sm me-2"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>Link lista 5</a></li>
+                            <li><a class="list-item dropdown-item" href="#"><svg class="icon icon-sm me-2"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>Link lista 6</a></li>
                           </ul>
                         </div>
                       </div>
-                    </li>
-                    <!-- megamenu -->
-                    <li class="nav-item dropdown megamenu">
-                      <button type="button" class="nav-link dropdown-toggle px-lg-2 px-xl-3" data-bs-toggle="dropdown" aria-expanded="false" id="megamenu-2" data-focus-mouse="false">
-                          <span>Megamenu</span><svg role="img" class="icon icon-xs ms-1"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use></svg>
-                      </button>
-                      <div class="dropdown-menu shadow-lg" role="region" aria-labelledby="megamenu-2">
-                        <div class="megamenu pb-5 pt-3 py-lg-0">
-                          <div class="row">
-                            <div class="col-xs-12 col-lg-4 px-0">
-                              <div class="row">
-                                <div class="col-12 it-vertical it-description pb-lg-3">
-                                  <div class="description-content ps-4 ps-sm-5 ms-3">
-                                    <div class="ratio ratio-21x9 lightgrey-bg-a1 mb-4 rounded">
-                                      <figure class="figure">
-                                        <img src="https://via.placeholder.com/560x240/ebebeb/808080/?text=Immagine" class="figure-img img-fluid rounded" alt="Segnaposto">
-                                      </figure>
-                                    </div>
-                                    <p>
-                                      Testo utile a fornire una descrizione dei contenuti della sezione <strong>megamenu</strong>.
-                                    </p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-12 col-lg-8">
-                              <div class="it-heading-link-wrapper">
-                                <a class="it-heading-link" href="#"><svg role="img" class="icon icon-sm me-2 mb-1"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>
-                                <span>Esplora la sezione megamenu</span>
-                                </a>
-                              </div>
-                              <div class="row">
-                                <div class="col-12 col-lg-6">
-                                  <div class="link-list-wrapper">
-                                    <ul class="link-list">
-                                      <li>
-                                        <a class="list-item dropdown-item" href="#">
-                                          <svg role="img" class="icon icon-sm me-2"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>
-                                          <span>Link lista 1</span>
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a class="list-item dropdown-item" href="#">
-                                          <svg role="img" class="icon icon-sm me-2"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>
-                                          <span>Link lista 2</span>
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a class="list-item dropdown-item " href="#">
-                                          <svg role="img" class="icon icon-sm me-2"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>
-                                          <span>Link lista 3</span>
-                                        </a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                  <div class="link-list-wrapper">
-                                    <ul class="link-list">
-                                      <li>
-                                        <a class="list-item dropdown-item" href="#">
-                                          <svg role="img" class="icon icon-sm me-2"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>
-                                          <span>Link lista 4</span>
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a class="list-item dropdown-item" href="#">
-                                          <svg role="img" class="icon icon-sm me-2"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>
-                                          <span>Link lista 5</span>
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a class="list-item dropdown-item " href="#">
-                                          <svg role="img" class="icon icon-sm me-2"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>
-                                          <span>Link lista 6</span>
-                                        </a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </nav>
-          </div>
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
     </div>
-    
-    
-    
-    <div class="container">  
-        <div class="who">
-            <img class="immagine-nascosta" src="https://github.com/gjdnetwork-manager/interno/blob/main/Interno.png?raw=true" alt="---">
-            <div class="no-fix">
-                <h2>Chi sono?</h2>
-                <p>
-                    Ciao a tutti! Mi chiamo Gabriel e molti di voi mi conosceranno come onlygabbyme. Sono un grande appassionato di informatica e sogno di diventare un influencer un giorno, un obiettivo che mi motiva ogni giorno. Attualmente, mi dedico con entusiasmo alla creazione di video e mi piace moltissimo interagire con voi su Instagram e Snapchat.
-                    <br><br>
-                    La mia passione per l'informatica non è solo un interesse, ma è davvero una parte fondamentale della mia vita. Che si tratti di esplorare nuove tecnologie, risolvere problemi complessi o semplicemente scoprire nuovi software, l'informatica è il mio mondo. Sono sempre alla ricerca di modi per migliorare le mie competenze e condividere la mia passione con gli altri.
-                    <br><br>
-                    Oltre alla tecnologia, mi piace anche passare il tempo a discutere di nuove tendenze e scoprire come l'informatica può trasformare il nostro quotidiano. Se avete domande o volete chiacchierare su argomenti tecnologici, sono sempre qui per voi!
-                </p>
-            </div>
-        </div>
-<section id="competenze">
-  <h2>Competenze Informatiche</h2>
-  <p>Sono un appassionato di informatica con esperienza nella creazione e gestione di siti web e nello sviluppo di framework. Le mie competenze principali includono:</p>
-  <ul>
-    <li><strong>Sviluppo Web:</strong> Esperto in HTML, CSS e JavaScript, con esperienza nella creazione di layout responsivi e nell'uso di framework come Bootstrap. Attualmente, sto lavorando su AvaWeb, un CMS progettato per unire semplicità e funzionalità avanzata.</li>
-    <li><strong>Design e Usabilità:</strong> Focus su accessibilità e design accattivante. Mi impegno a creare esperienze utente ottimali e visivamente piacevoli, utilizzando font come 'Fira Code' e garantendo una navigazione fluida e intuitiva.</li>
-    <li><strong>Progetti e Collaborazioni:</strong> Ho collaborato con diverse associazioni locali e sviluppato progetti personali come GJD DOCS e il sito comune.gjdev.it, con l’obiettivo di migliorare la comunicazione e l'interazione con la comunità.</li>
-    <li><strong>Innovazione e Politica:</strong> Attualmente ricopro il ruolo di Assessore giovanile alle opportunità dei giovani, cercando di portare la voce dei giovani nelle istituzioni e facilitare la loro partecipazione attiva.</li>
-  </ul>
-  <p>Sono sempre pronto a nuove sfide e opportunità per applicare le mie competenze e contribuire a progetti innovativi.</p>
-</section>
+  </div>
 
-      
-        <h2>Psicologia</h2>
-<section id="psicologia">
-  <h2>Competenze in Psicologia</h2>
-  <p>Ho studiato approfonditamente vari aspetti della psicologia, con un focus particolare su disturbi e condizioni specifiche. Le mie principali aree di conoscenza includono:</p>
-  <ul>
-    <li><strong>Disturbi Specifici dell'Apprendimento (DSA):</strong> Comprensione dei DSA, come la dislessia, la disgrafia e la discalculia, e delle strategie per supportare l'apprendimento e l'inclusione scolastica.</li>
-    <li><strong>Bisogni Educativi Speciali (BES):</strong> Conoscenza delle esigenze educative particolari che possono influenzare l'apprendimento, e delle metodologie per adattare l'insegnamento e favorire l'inclusione.</li>
-    <li><strong>Disturbo da Deficit di Attenzione e Iperattività (ADHD):</strong> Studio dei sintomi, delle cause e delle strategie di intervento per gestire l'ADHD, migliorando il benessere e la funzionalità nelle diverse aree della vita.</li>
-    <li><strong>Disturbo dello Spettro Autistico (ASD):</strong> Approfondimento del Disturbo dello Spettro Autistico, incluse le caratteristiche principali, le sfide e le strategie per promuovere l'inclusione e il supporto adeguato.</li>
-    <li><strong>Depressione:</strong> Studio della depressione, delle sue cause, sintomi e approcci terapeutici, con attenzione alle tecniche per il supporto e la gestione dei disturbi dell'umore.</li>
-    <li><strong>Storia della Psicologia:</strong> Conoscenza delle principali teorie e scuole di pensiero nella storia della psicologia, e come esse abbiano influenzato la pratica e la comprensione odierna della mente umana.</li>
-  </ul>
-  <p>Questa formazione mi permette di affrontare e comprendere in modo più profondo le diverse sfide psicologiche e di contribuire al supporto e alla crescita delle persone in vari contesti.</p>
-</section>
-      <section id="politica">
-  <h2>Attività Politiche</h2>
-  <p>Attualmente sono impegnato nel campo della politica con l'obiettivo di promuovere le opportunità per i giovani e migliorare la partecipazione civica. Le mie principali attività includono:</p>
-  <ul>
-    <li><strong>Assessore Giovanile alle Opportunità dei Giovani:</strong> Ricopro il ruolo di Assessore giovanile con il compito di rappresentare le esigenze e le idee dei giovani all'interno del consiglio comunale. Il mio obiettivo è raccogliere e presentare le proposte dei giovani per migliorare la loro inclusione e partecipazione nella comunità.</li>
-    <li><strong>Proposte e Iniziative:</strong> Ho avviato e gestito iniziative come il sito comune.gjdev.it, che funge da piattaforma per le proposte dei cittadini e per migliorare la comunicazione tra i giovani e le istituzioni. Il mio lavoro si concentra anche sulla creazione di strumenti che facilitino l'interazione e la trasparenza.</li>
-    <li><strong>Collaborazioni:</strong> Lavoro a stretto contatto con scuole medie e associazioni giovanili per raccogliere idee e comprendere le necessità dei giovani. Le mie collaborazioni mirano a creare un dialogo costruttivo e a facilitare la partecipazione attiva dei giovani nella vita politica e sociale.</li>
-    <li><strong>Visibilità e Report:</strong> Utilizzo il sito comune.gjdev.it e incontri a scuola per garantire una buona visibilità delle mie attività e dei risultati ottenuti. Redigo report mensili e conduco sondaggi per valutare l'efficacia delle iniziative e raccogliere feedback dai giovani.</li>
-  </ul>
-  <p>Il mio impegno politico è guidato dalla volontà di rendere le istituzioni più accessibili e rispondenti alle esigenze della comunità giovanile, e di promuovere un ambiente inclusivo e partecipativo.</p>
-</section>
+  <div class="container mt-4">
+    <section id="chi-sono">
+      <h2>Chi sono?</h2>
+      <p>
+        Ciao a tutti! Mi chiamo Gabriel e molti di voi mi conosceranno come onlygabbyme. Sono un grande appassionato di informatica e sogno di diventare un influencer un giorno, un obiettivo che mi motiva ogni giorno. Attualmente, mi dedico con entusiasmo alla creazione di video e mi piace moltissimo interagire con voi su Instagram e Snapchat.
+        <br><br>
+        La mia passione per l'informatica non è solo un interesse, ma è davvero una parte fondamentale della mia vita. Che si tratti di esplorare nuove tecnologie, risolvere problemi complessi o semplicemente scoprire nuovi software, l'informatica è il mio mondo. Sono sempre alla ricerca di modi per migliorare le mie competenze e condividere la mia passione con gli altri.
+        <br><br>
+        Oltre alla tecnologia, mi piace anche passare il tempo a discutere di nuove tendenze e scoprire come l'informatica può trasformare il nostro quotidiano. Se avete domande o volete chiacchierare su argomenti tecnologici, non esitate a contattarmi!
+      </p>
+    </section>
+
+    <section id="contatti">
+      <h2>Contattami</h2>
+      <p>
+        Se desideri metterti in contatto con me, puoi farlo inviandomi una email all'indirizzo <a href="mailto:gabriel@example.com">gabriel@example.com</a>. Sono sempre felice di ricevere feedback, domande o semplicemente fare due chiacchiere.
+      </p>
+    </section>
+  </div>
+
+  <footer class="bg-dark text-white py-3 mt-4">
+    <div class="container text-center">
+      <p>&copy; 2024 Gabriel Jones. Tutti i diritti riservati.</p>
     </div>
+  </footer>
 
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-        }
-        .who {
-            display: flex;
-        }
-        .who img {
-            max-width: 40%;
-            height: auto;
-            margin-right: 10px; /* Distanza tra l'immagine e il testo */
-        }
-        @media (max-width: 768px) {
-            .immagine-nascosta {
-                display: none;
-            }
-        }
-    </style>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO1b+8C4ltxEJw7s5iG3F7a6W2ik71BQ6T9g2EptC0b8NO8cF3Pb9P" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-3jR67sG2tmRfBzK4kcrZtF1Fxk9jyF9PfeSjdVyh6OaQSpXFnJ2sfq9yIddP+gmFf" crossorigin="anonymous"></script>
 </body>
 </html>
